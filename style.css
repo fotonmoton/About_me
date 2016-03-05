@@ -1,0 +1,59 @@
+* { 
+	padding: 0; margin: 0; 
+}
+
+html, body {
+	min-height: 100%;
+	height: 100%;
+	color: #2e343b;
+	font-family: 'Open Sans', arial, sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(circle farthest-side at top left, #ffffff, #8b9dc3);
+	background-size: 600% 600%;
+	animation: bg-anim 40s ease infinite;
+	-webkit-animation: bg-anim 40s ease infinite;
+}
+
+#main {
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#photo {
+	border-radius: 100%;
+	margin: 10px 0px 10px 0px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 1s transform;
+}
+
+#photo:hover { 
+	transform: rotateY(.5turn);
+}
+
+p {
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+
+
+/*animation keyframes*/
+
+@keyframes bg-anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-webkit-keyframes bg-anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
