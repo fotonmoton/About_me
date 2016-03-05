@@ -16,7 +16,7 @@ body {
 	background: radial-gradient(circle farthest-side at top left, #ffffff, #8b9dc3);
 	background-size: 600% 600%;
 	animation: bg-anim 40s ease infinite;
-	-webkit-animation: bg-anim 40s ease infinite;
+	-webkit-animation: bg-anim 50s ease infinite;
 }
 
 #main {
