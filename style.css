@@ -32,10 +32,7 @@ body {
 	position: relative;
 	transform-style: preserve-3d;
 	transition: 1s transform;
-}
-
-#photo:hover { 
-	transform: rotateY(.5turn);
+	transition-timing-function: cubic-bezier(.59,-0.82,.33,1.74);
 }
 
 p {
